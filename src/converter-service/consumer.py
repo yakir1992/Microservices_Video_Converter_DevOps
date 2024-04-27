@@ -11,7 +11,7 @@ def main():
     fs_videos = gridfs.GridFS(db_videos)
     fs_mp3s = gridfs.GridFS(db_mp3s)
 
-    # rabbitmq connection
+    # rabbitmq connection.
     connection = pika.BlockingConnection(
         pika.ConnectionParameters(host='rabbitmq',heartbeat=0)
     )
